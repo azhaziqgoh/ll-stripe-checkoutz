@@ -1,3 +1,34 @@
+## Learning Loops - Stripe Checkout
+
+This is a Next.js based stripe checkout. The challenge was to create Stripe Checkout as minimal code as possible.
+
+The approach taken to deliver this solution was to used prebuilt stripe checkout
+
+## Why PreBuilt?
+It's the least complex way to implement stripe checkout with couple of lines
+
+## Solution Assumption
+- Store have unlimited stock
+- User can only all the item listed once for each sessions
+
+## Future Improvement
+- Implement webhook
+- Introduce inventory stock system
+
+## Techstack
+
+- [Next.js](https://nextjs.org/)
+- [MUI](https://mui.com/components/grid/)
+
+## Reference Links
+
+- Stripe Checkout Quickstart - https://stripe.com/docs/checkout/quickstart
+- Stripe Checkout using NextJS - https://www.youtube.com/watch?v=sPUSu19tZHg
+- MUI Setup - https://dev.to/hajhosein/nextjs-mui-v5-typescript-tutorial-and-starter-3pab 
+- Another MUI Setup - https://www.ansonlowzf.com/create-a-website-with-material-ui-v5-nextjs/
+
+## Typical Next.js CLI Readme
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -12,9 +43,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
@@ -27,8 +58,4 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
